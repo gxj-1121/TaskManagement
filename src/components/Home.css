@@ -1,0 +1,64 @@
+@import "~antd/dist/antd.css";
+
+/* 头部 */
+.header {
+  height: 50px;
+  width: 100%;
+  background-color: #fff;
+  line-height: 50px;
+}
+.hd-right,
+.logo,
+.volumn {
+  display: inline-block;
+}
+/* 内容 */
+.content {
+  background-color: #f0f2f5;
+  margin-top: 30px;
+  padding: 0 15px;
+}
+.content-left {
+  width: 80%;
+}
+.content-right {
+  width: 20%;
+}
+
+/* 添加task按钮 */
+.add-btn {
+  width: 200px;
+  height: 200px;
+  background-color: #fff;
+  border: 1px dashed transparent;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 48px;
+  text-align: center;
+  vertical-align: top;
+  margin-top: 10px;
+  color: rgba(0, 0, 0, 0.3);
+  cursor: pointer;
+}
+.add-btn:hover {
+  border-color: rgb(90, 169, 248);
+}
+
+/* 控制浮动 */
+.right {
+  float: right;
+}
+.left {
+  float: left;
+}
+
+/* antd样式重写 */
+.ant-card {
+  margin-right: 10px;
+  margin-top: 10px;
+  vertical-align: top;
+}
+.ant-card-head {
+  font-size: 12px;
+}
