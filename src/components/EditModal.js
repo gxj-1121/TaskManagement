@@ -59,6 +59,7 @@ export const EditModal = (props) => {
                   placeholder="年/月/日"
                   format={dateFormat}
                   style={{ width: 402.5 }}
+                  defaultValue={moment(props.curTask.endDate,dateFormat)}
                   onChange={(e) => props.handleDateChange(e, "endDate")}
                 />
               </Space>

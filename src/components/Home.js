@@ -2,7 +2,6 @@ import {
   Layout,
   message
 } from "antd";
-import Form from "antd/lib/form/Form";
 import moment from "moment";
 import React from "react";
 import { connect } from "react-redux";
@@ -60,7 +59,6 @@ const mapDispatchToProps = (dispatch, ownProps) => {
 };
 class Home extends React.Component {
 
-  form = Form.create()
   state = {
     curTask: {},
     failNum: 0, 
@@ -246,7 +244,7 @@ class Home extends React.Component {
 
         {/* 新增modal */}
         <AddModal
-          form={this.form}
+          formRef={this.formRef}
           isAdd={this.state.isAdd}
           disabledDate={this.disabledDate}
           handleOk={this.handleOk}

@@ -11,7 +11,7 @@ import { formatBt } from "../utils/tool";
 export const Head = (props) => {
   return (
     <>
-      <div className="logo">Notepad++</div>
+      <div className="logo" style={{fontWeight:"bold"}}>Taskpad</div>
       <div className="hd-right right">
         <Badge count={props.failNum} dot>
           <BellFilled style={{ marginRight: "10px" }} />
